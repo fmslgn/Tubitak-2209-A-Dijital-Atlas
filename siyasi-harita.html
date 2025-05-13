@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siyasi Harita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .header {
+      text-align: center;
+      padding: 2.5rem 0;
+    }
+    .header-title {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+    .cards {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .cards {
+        flex-direction: row;
+      }
+    }
+    .card {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 15rem;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin: 0 auto 1rem;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #4a4a4a;
+    }
+  </style>
+</head>
+<body class="bg-[#f9f9f9] font-sans">
+
+  <!-- Başlık -->
+  <header class="header">
+    <h1 class="header-title">Siyasi Harita</h1>
+    <p class="header-subtitle">Bölge, İl ve Komşular haritalarını keşfedin.</p>
+  </header>
+
+  <!-- Kartlar -->
+  <section class="cards">
+    <!-- Bölge -->
+    <div class="card">
+      <img src="/assets/media/bölge-haritası.png" alt="Bölge Haritası">
+      <h2 class="card-title">Bölge</h2>
+    </div>
+
+    <!-- İl -->
+    <div class="card">
+      <img src="/assets/media/il-harita.png" alt="İl Haritası">
+      <h2 class="card-title">İl</h2>
+    </div>
+
+    <!-- Komşular -->
+    <div class="card">
+      <img src="/assets/media/komsular-harita.png" alt="Komşular Haritası">
+      <h2 class="card-title">Komşular</h2>
+    </div>
+  </section>
+
+</body>
+</html>

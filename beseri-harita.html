@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beşeri Harita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .header {
+      text-align: center;
+      padding: 2.5rem 0;
+    }
+    .header-title {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+    .cards {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .cards {
+        flex-direction: row;
+      }
+    }
+    .card {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 15rem;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin: 0 auto 1rem;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #4a4a4a;
+    }
+  </style>
+</head>
+<body class="bg-[#f9f9f9] font-sans">
+
+  <!-- Başlık -->
+  <header class="header">
+    <h1 class="header-title">Beşeri Harita</h1>
+    <p class="header-subtitle">Sanayi, Turizm, Yerleşim ve Nüfus haritalarını keşfedin.</p>
+  </header>
+
+  <!-- Kartlar -->
+  <section class="cards">
+    <!-- Sanayi -->
+    <div class="card">
+      <img src="/assets/media/sanayi-harita.png" alt="Sanayi Haritası">
+      <h2 class="card-title">Sanayi</h2>
+    </div>
+
+    <!-- Turizm -->
+    <div class="card">
+      <img src="/assets/media/turizm-harita.png" alt="Turizm Haritası">
+      <h2 class="card-title">Turizm</h2>
+    </div>
+
+    <!-- Yerleşim -->
+    <div class="card">
+      <img src="/assets/media/yerlesim-png.png" alt="Yerleşim Haritası">
+      <h2 class="card-title">Yerleşim</h2>
+    </div>
+
+    <!-- Nüfus -->
+    <div class="card">
+      <img src="/assets/media/nufüs-harita.png" alt="Nüfus Haritası">
+      <h2 class="card-title">Nüfus</h2>
+    </div>
+  </section>
+
+</body>
+</html>
